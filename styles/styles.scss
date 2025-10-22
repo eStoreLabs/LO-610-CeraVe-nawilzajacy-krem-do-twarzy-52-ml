@@ -20,7 +20,7 @@ $px-XXL: 40px;
 $color-main: #003058;
 $color-bg: #ffffff;
 $color-accent: #0073ce;
-$color-accent-2: #673996;
+$color-accent-2: #0073CE;
 
 $media-breakpoint-sm: 576px;
 $media-breakpoint-md: 768px;
@@ -222,7 +222,7 @@ $transition: all 0.3s ease-in-out;
     }
     @container es-rc-content (min-width: 980px) {
       &__right {
-        width: 71%;
+        width: 73%;
         &__logo {
           right: 7%;
         }
@@ -397,7 +397,7 @@ $transition: all 0.3s ease-in-out;
 
     position: relative;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
 
     &__night-cream-img {
       position: absolute;
@@ -444,28 +444,8 @@ $transition: all 0.3s ease-in-out;
         margin-top: $px-S;
       }
     }
-    @container es-rc-content (max-width: 765px) {
-      &__night-cream-img {
-        max-width: 386px;
-        width: 100%;
-      }
-
-      &__content {
-        margin-top: 391px;
-      }
-    }
     @container es-rc-content (min-width: 766px) {
       flex-direction: column;
-
-      &__content {
-        max-width: 820px;
-        margin-left: 294px;
-      }
-    }
-    @container es-rc-content (max-width: 375px) {
-      &__content {
-        margin-top: 100%;
-      }
     }
     @container es-rc-content (min-width: 768px) {
       &__list {
@@ -532,7 +512,7 @@ $transition: all 0.3s ease-in-out;
     @container es-rc-content (min-width: 576px) {
       position: relative;
       display: flex;
-      align-items: flex-end;
+      align-items: center;
       min-height: 400px;
       &__image {
         &__container {
@@ -652,6 +632,14 @@ $transition: all 0.3s ease-in-out;
         &-container {
           position: relative;
           z-index: 1;
+          &-sun {
+            display: flex;
+            justify-content: flex-end;
+            &-img {
+              width: 80px;
+              margin: 8px 20px;
+            }
+          }
           &::after {
             content: "";
             position: absolute;
@@ -667,6 +655,9 @@ $transition: all 0.3s ease-in-out;
       }
 
       &__text {
+        &-description {
+font-size:20px;
+        }
         &-container {
           display: flex;
           flex-direction: column;
@@ -714,12 +705,14 @@ $transition: all 0.3s ease-in-out;
     @container es-rc-content (min-width: 798px) {
       &__content {
         flex-direction: row;
-        align-items: flex-start;
+        align-items: stretch;
         gap: 4px;
       }
       &__item {
         flex: 1 1 0;
         max-width: unset;
+        display: grid;
+        align-items: end;
         &__image {
           max-height: 92%;
           max-width: 200px;
@@ -727,10 +720,9 @@ $transition: all 0.3s ease-in-out;
           padding: 0;
           &-container {
             width: 100%;
-            height: 100%;
             display: grid;
             align-items: flex-end;
-            aspect-ratio: 5 / 4;
+            aspect-ratio: 5 / 6;
           }
         }
       }
