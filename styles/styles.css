@@ -541,9 +541,6 @@
   aspect-ratio: 16/9;
   border: 0;
 }
-#es-rc #es-rc-content .es-cross {
-  margin-bottom: 150px;
-}
 #es-rc #es-rc-content .es-cross__content {
   display: flex;
   flex-direction: column;
