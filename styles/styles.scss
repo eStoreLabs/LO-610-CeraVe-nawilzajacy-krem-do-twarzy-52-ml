@@ -552,7 +552,7 @@ $transition: all 0.3s ease-in-out;
     }
 
     & > *:last-child {
-      flex: 0 0 47%;
+      flex: 0 0 37%;
     }
 
     &__image {
@@ -562,8 +562,7 @@ $transition: all 0.3s ease-in-out;
       display: flex;
       justify-content: center;
       flex-direction: column;
-      gap: 15px;
-      padding-right: 12px;
+      gap: 42px;
 
       background-color: $color-accent-2;
       color: $color-bg;
@@ -611,6 +610,7 @@ $transition: all 0.3s ease-in-out;
   }
 
   .es-cross {
+    margin-bottom: 150px;
     &__content {
       display: flex;
       flex-direction: column;
@@ -633,9 +633,11 @@ $transition: all 0.3s ease-in-out;
           position: relative;
           z-index: 1;
           &-sun {
+            height: 100%;
             display: flex;
             justify-content: flex-end;
             &-img {
+              height: 80px;
               width: 80px;
               margin: 8px 20px;
             }
@@ -656,7 +658,7 @@ $transition: all 0.3s ease-in-out;
 
       &__text {
         &-description {
-font-size:20px;
+          font-size:20px;
         }
         &-container {
           display: flex;
@@ -681,6 +683,7 @@ font-size:20px;
         }
       }
       &__button {
+        margin-top: auto;
         background-color: $color-main;
         display: block;
         padding: $px-M;
@@ -711,8 +714,9 @@ font-size:20px;
       &__item {
         flex: 1 1 0;
         max-width: unset;
-        display: grid;
-        align-items: end;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         &__image {
           max-height: 92%;
           max-width: 200px;
