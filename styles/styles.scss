@@ -36,7 +36,7 @@ $transition: all 0.3s ease-in-out;
   line-height: 1.25;
   color: $color-main;
   background-color: $color-bg;
-  max-width: 990px;
+  max-width: 1200px;
   margin: auto;
   container-type: inline-size;
   container-name: es-rc-content;
@@ -173,7 +173,7 @@ $transition: all 0.3s ease-in-out;
         width: 46%;
       }
       &__right {
-        width: 73%;
+        width: 75%;
         position: absolute;
         right: 0;
         top: 0;
@@ -310,7 +310,7 @@ $transition: all 0.3s ease-in-out;
         }
       }
     }
-    @container es-rc-content (min-width: 576px) {
+    @container es-rc-content (min-width: 813px) {
       position: relative;
       z-index: 1;
       &__hand {
@@ -334,6 +334,7 @@ $transition: all 0.3s ease-in-out;
           width: 100%;
           height: 100%;
           object-fit: cover;
+          object-position: top right;
         }
       }
       &__wrapper {
@@ -341,12 +342,12 @@ $transition: all 0.3s ease-in-out;
           width: 40%;
         }
         &--bottom {
-          width: 68%;
+          width: 40%;
         }
       }
     }
-    @container es-rc-content (min-width: 768px) {
-      padding: $px-XXL $px-XL;
+    @container es-rc-content (min-width: 1090px) {
+      padding: 65px;
       &__bg {
         width: 100%;
       }
@@ -354,13 +355,15 @@ $transition: all 0.3s ease-in-out;
         font-size: 32px;
       }
       &__subtitle {
-        font-size: 22px;
+        margin: 40px 0 30px 0;
+        font-size: 28px;
       }
       &__points {
-        font-size: $fs-base-md;
+        font-size: 25px;
       }
       &__badge {
         &Ctn {
+          margin: 66px 0 55px 0;
           max-width: 400px;
           gap: 20px;
         }
@@ -378,9 +381,8 @@ $transition: all 0.3s ease-in-out;
           max-width: 440px;
         }
         &--bottom {
-          width: 70%;
+          width: 48%;
           max-width: 600px;
-          margin-top: 48px;
         }
       }
     }
@@ -725,7 +727,7 @@ $transition: all 0.3s ease-in-out;
             width: 100%;
             display: grid;
             align-items: flex-end;
-            aspect-ratio: 5 / 6;
+            aspect-ratio: 1;
           }
         }
       }
